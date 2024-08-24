@@ -1,0 +1,24 @@
+{ 
+   "name": "FZXAniAdvanced", 
+   "description": "A Telegram Bot automatically Fetch, Encode & Upload Animes Using RSS & LibTorrent", 
+   "keywords": ["telegram", "files", "stream"],
+   "success_url": "/",
+   "env": { 
+     "ENV": { 
+       "description": "Set this to True if you don't want to crash the bot", 
+       "value": "True" 
+     }
+   }, 
+   "buildpacks": [ 
+     { 
+       "url": "heroku/python" 
+     } 
+   ], 
+   "stack": "container", 
+   "formation": { 
+     "worker": { 
+       "quantity": 1,
+       "size": "standard-2x" 
+     } 
+   } 
+}
